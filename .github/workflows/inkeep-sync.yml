@@ -41,6 +41,4 @@ jobs:
         with:
           api-key: ${{ secrets.INKEEP_API_KEY }}
           source-id: 'clohg84p70000s6010tuqnpb9'
-          
-      - name: List environment variables
-        run: env
+        
