@@ -32,13 +32,13 @@ jobs:
         if: steps.changes.outputs.site == 'true'
         uses: inkeep/pr-commenter-action@v7.8
         with:
-          api-key: ${{ secrets.INKEEP_API_KEY }}
-          source-id: 'clohl0lk20000s601g2siksub'
+          apiKey: ${{ secrets.INKEEP_API_KEY }}
+          sourceId: 'clohl0lk20000s601g2siksub'
 
       - name: Sync Docs Source 
         if: steps.changes.outputs.docs == 'true'
         uses: inkeep/pr-commenter-action@v7.8
         with:
-          api-key: ${{ secrets.INKEEP_API_KEY }}
-          source-id: 'clohg84p70000s6010tuqnpb9'
+          apiKey: ${{ secrets.INKEEP_API_KEY }}
+          sourceId: 'clohg84p70000s6010tuqnpb9'
         
